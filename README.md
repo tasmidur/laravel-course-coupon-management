@@ -144,3 +144,14 @@ Add the `Tasmidur\Coupon\Traits\CouponTrait` trait is used for applying coupon c
  $coupons = Course::eloquentQuery($sortBy, $orderBy, $searchValue)->with(['category', 'coupons'])->get();
 ```
 ### UI
+## Coupon-list:
+![coupon-list](https://github.com/tasmidur/laravel-course-coupon-management/blob/master/static-files/coupon-list.png)
+
+## Add Coupon:
+![coupon-list](https://github.com/tasmidur/laravel-course-coupon-management/blob/master/static-files/add-coupon.png)
+
+## Apply Coupon:
+![coupon-list](https://github.com/tasmidur/laravel-course-coupon-management/blob/master/static-files/apply-coupon.png)
+
+## Where Apply Coupon view:
+![coupon-list](https://github.com/tasmidur/laravel-course-coupon-management/blob/master/static-files/where-applied.png)
