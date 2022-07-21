@@ -1,4 +1,4 @@
-#### Laravel Course Coupon management service where course coupon code is managed using a package called coupon ![https://packagist.org/packages/tasmidur/coupon] and frontend is developed by vue js
+#### Laravel Course Coupon management service where course coupon code is managed using a laravel-coupon (https://github.com/user/repo/blob/branch/other_file.md) package and frontend is developed by vue js
 ## Installation
 
 Clone the repository
