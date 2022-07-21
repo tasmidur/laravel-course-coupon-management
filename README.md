@@ -1,4 +1,4 @@
-### Laravel Course Coupon management service where course coupon code is managed using a package called coupon [https://packagist.org/packages/tasmidur/coupon]
+#### Laravel Course Coupon management service where course coupon code is managed using a package called coupon ![https://packagist.org/packages/tasmidur/coupon] and frontend is developed by vue js
 ## Installation
 
 Clone the repository
@@ -46,7 +46,11 @@ You can publish the config-file with:
 ```bash
 php artisan vendor:publish --provider=Tasmidur\Coupon\LaravelCouponServiceProvider --tag="config"
 ```
+npm package install for vue js
 
+```bash
+yarn install
+```
 This is the contents of the published config file:
 
 ```php
@@ -105,23 +109,16 @@ return [
 
 ];
 ```
-## Usage
+Seed the CourseSeeder for courses
+```bash
+php artisan db:seed --class=CourseSeeder
+```
 
-The basic concept of this package is that you can create coupons, that are associated with a specific model. For example, you could have an application that sells online video courses and a voucher would give a user access to one specific video course.
+```bash
+php artisan serve
+```
 
-## Creating coupons
-
-### Using the facade
-
-You can create one or multiple coupons and access by using the `coupons` facade:
-* @method static array createCoupon(string $couponType, float $price, Carbon|null $expiredAt = null, int $totalAmount = 1)
-* @method static mixed getCouponList(string $sortBy = "id", string $orderBy = "ASC")
-* @method static mixed getCouponListWithPagination(int $length = 10, string $sortBy = "id", string $orderBy = "ASC")
-* @method static bool deleteCoupon(int $id)
-* @method static mixed getCoupon(int $id)
-* @method static mixed updateCoupon(array $payload, int $id)
-* @method static mixed check(string $code)
-* @method static mixed whereApplyCoupon(string $code)
+The basic use and code base is here
 ```php
 //Use for Create
 $coupon = Coupons::createCoupon(string $couponType, float $price, Carbon|null $expiredAt = null, int $totalAmount = 1);
@@ -138,8 +135,7 @@ $coupon = Coupons::check(string $code);
 $coupon = Coupons::whereApplyCoupon(string $code);
 
 ```
-
-Add the `Tasmidur\Coupon\Traits\CouponTrait` trait to your model. This way you can easily apply coupon codes and the package takes care of storing the coupon association in the database.
+Add the `Tasmidur\Coupon\Traits\CouponTrait` trait is used for applying coupon codes and the package takes care of storing the coupon association in the database.
 ```php
  $course = Course::findOrFail($courseId);
  /** One Coupon Is for One Course */
@@ -147,3 +143,4 @@ Add the `Tasmidur\Coupon\Traits\CouponTrait` trait to your model. This way you c
  /** all applied coupons that is associated with course */
  $coupons = Course::eloquentQuery($sortBy, $orderBy, $searchValue)->with(['category', 'coupons'])->get();
 ```
+### UI

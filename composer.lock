@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7ac2760ce9f1d89d85a41d1b4e79579",
+    "content-hash": "0539f8b267b846e916ab5918197450b6",
     "packages": [
         {
             "name": "brick/math",
@@ -948,16 +948,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.21.2",
+            "version": "v9.21.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7d55eaf2c83519ef2c788d7278ff8dfed795ee3e"
+                "reference": "7707d6a16c70da1561bf80964e89b1b94ca78a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7d55eaf2c83519ef2c788d7278ff8dfed795ee3e",
-                "reference": "7d55eaf2c83519ef2c788d7278ff8dfed795ee3e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7707d6a16c70da1561bf80964e89b1b94ca78a48",
+                "reference": "7707d6a16c70da1561bf80964e89b1b94ca78a48",
                 "shasum": ""
             },
             "require": {
@@ -1124,7 +1124,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-07-20T15:52:38+00:00"
+            "time": "2022-07-21T13:30:12+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -5027,11 +5027,17 @@
         },
         {
             "name": "tasmidur/coupon",
-            "version": "dev-testing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tasmidur/laravel-coupons.git",
+                "reference": "180dbc7aa086068ce740f69d21db0db4cbaea7b9"
+            },
             "dist": {
-                "type": "path",
-                "url": "packages/tasmidur/coupon",
-                "reference": "fb05ef803384b4699d3166c938c25c0c9efda0b1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/tasmidur/laravel-coupons/zipball/180dbc7aa086068ce740f69d21db0db4cbaea7b9",
+                "reference": "180dbc7aa086068ce740f69d21db0db4cbaea7b9",
+                "shasum": ""
             },
             "require": {
                 "illuminate/config": "^8.0|^9.0",
@@ -5039,6 +5045,7 @@
                 "illuminate/support": "^8.0|^9.0",
                 "php": "^8.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -5052,6 +5059,7 @@
                     "Tasmidur\\Coupon\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5063,10 +5071,11 @@
                 }
             ],
             "description": "description",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/tasmidur/laravel-coupons/issues",
+                "source": "https://github.com/tasmidur/laravel-coupons/tree/master"
+            },
+            "time": "2022-07-21T17:06:45+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -5649,16 +5658,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.15.0",
+            "version": "v1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "676e1ff33c1b8af657779f62f57360c376cba666"
+                "reference": "2fe64c0b45a3af56cac0af638c8020a8adc860d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/676e1ff33c1b8af657779f62f57360c376cba666",
-                "reference": "676e1ff33c1b8af657779f62f57360c376cba666",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/2fe64c0b45a3af56cac0af638c8020a8adc860d7",
+                "reference": "2fe64c0b45a3af56cac0af638c8020a8adc860d7",
                 "shasum": ""
             },
             "require": {
@@ -5705,7 +5714,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-06-24T13:56:11+00:00"
+            "time": "2022-07-21T14:33:56+00:00"
         },
         {
             "name": "mockery/mockery",

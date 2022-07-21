@@ -2669,7 +2669,7 @@ var render = function render() {
 
   return _c("div", [_c("h3", {
     staticClass: "text-center"
-  }, [_vm._v("Add Post")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Add Coupon")]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-md-6",
